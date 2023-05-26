@@ -1,2 +1,5 @@
 # MTgraphy
-MTgraphy - College HCI Project
+
+## Website for Photography
+
+Mtgraphy is a website 
