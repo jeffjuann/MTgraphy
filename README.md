@@ -1,5 +1,9 @@
 # MTgraphy
+\
+## About The Project
 
-## Website for Photography
+This project is a website built only for Human & Computer Interaction (HCI) Lab Project at *_BINUS UNIVERSITY_*. This project is finished on June 2022. 
 
-Mtgraphy is a website 
+## About The Website
+
+MTgraphy is a website for photography service selling company. this website is built in HTML, CSS & Javascript.
