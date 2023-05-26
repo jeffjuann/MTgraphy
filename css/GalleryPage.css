@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap');
+
+body
+{
+    box-sizing: border-box;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+
+.content
+{
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-menu
+{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transform: translateY(220);
+    background-image: url("../Assets/GalleryPage/Wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.info-menu h1
+{
+    font-size: 3vw;
+    color: white;
+    font-size: 3rem;
+}
+
+.info-menu p
+{
+    font-size: 1.4vw;
+    font-weight: bolder;
+    color: white;
+    width: 40vw;
+    text-align: center;
+}
+
+.info-menu button
+{
+    width: 15vw;
+    height: 50px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    color: #313131;
+    font-size: 2vh;
+    border: none;
+}
+
+.gallery
+{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 125px 0px;
+    height: auto;
+    background-color: #f5f5f5;
+}
+
+.photo-grid
+{
+    display: flex;
+    width: auto;
+    height: auto;
+    gap: 20px;
+}
+
+.wedding
+{
+    flex-direction: row;
+}
+
+.vacation
+{
+    flex-direction: row-reverse;
+}
+
+.family
+{
+    flex-direction: column;
+}
+
+.nature
+{
+    flex-direction: column;
+}
+
+.left-grid
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media(max-width:800px)
+{
+    .content
+    {
+        padding-top: 70px;
+    }
+    .info-menu
+    {
+        width: 100vw;
+        height: calc(100vh - 70px);
+    }
+
+    .info-menu h1
+    {
+        font-size: 25px;
+    }
+
+    .info-menu p
+    {
+        font-size: 3vw;
+        font-weight: bolder;
+    }
+
+    .info-menu button
+    {
+        width: 60vw;
+    }
+
+    .gallery h1
+    {
+        font-size: 3vh;
+    }
+
+    .wedding img
+    {
+        width: 30vw;
+    }
+
+    .vacation img
+    {
+        width: 30vw;
+    }
+
+    .family img
+    {
+        width: calc(60vw + 20px);
+    }
+
+    .nature img
+    {
+        width:  calc(60vw + 20px);
+    }
+
+}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap');
+
+body
+{
+    box-sizing: border-box;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    background-color: #313131;
+    overflow-x: hidden;
+}
+
+*
+{
+    margin: 0px;
+}
+
+.content
+{
+    padding-top: 100px;
+    min-height: calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+}
+
+.content *
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 2vh;
+}
+
+.img
+{
+    display: block;
+    width: 65%;
+    min-height: calc(100vh - 100px);
+    background-image: url("../Assets/SubscribePage/Background.png");
+    background-size: cover;
+}
+
+.form
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 35%;
+    min-height: calc(100vh - 100px);
+    background-color: whitesmoke;
+    padding: 30px;
+    align-items: center;
+}
+
+.form h1
+{
+    width: 100%;
+    text-align: left;
+    font-size: 7vh;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    height: auto;
+}
+
+.field
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.field input
+{
+    background-color: whitesmoke;
+    padding: 3px;
+    outline: 0px;
+    border-width: 0px 0 2.5px;
+    border-color: #313131;
+}
+
+.field select
+{
+    background-color: whitesmoke;
+    padding: 3px;
+    outline: 0px;
+    border-width: 0px 0 2.5px;
+    border-color: #313131;
+}
+
+#button
+{
+    width: 25vw;
+    height: 82px;
+    padding: 10px;
+    background-color: #313131;
+    border-radius: 100px;
+    color: #FFFFFF;
+    font-size: 2.5vh;
+}
+
+.button-field
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.field p
+{
+    color: red;
+}
+
+@media(max-width:800px)
+{
+    .content
+    {
+        flex-direction: column-reverse;
+        padding-top: 70px;
+    }
+    
+    .img
+    {
+        display: none;
+    }
+
+    .form
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .form button
+    {
+        width: 60vw;
+    }
+}

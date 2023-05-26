@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap');
+
+body
+{
+    box-sizing: border-box;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.content *
+{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.content
+{
+    padding-top: 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh);
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.top-part
+{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    height: 1120px;
+    background-image: url("../Assets/HomePage/Wallpaper.png");
+    background-size: cover;
+}
+
+.info-menu
+{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 350px);
+    height: calc(100vh - 90px);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transform: translateY(220);
+}
+
+.info-menu h1
+{
+    font-size: 3vw;
+    color: white;
+    font-size: 3rem;
+}
+
+.info-menu p
+{
+    font-size: 1.4vw;
+    font-weight: bolder;
+    color: white;
+    width: 40vw;
+    text-align: center;
+}
+
+.info-menu button
+{
+    width: 15vw;
+    height: 50px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    color: #313131;
+    font-size: 2vh;
+    border: none;
+}
+
+.top-part img
+{
+    transform: translateY(90px);
+    width: 20px;
+}
+
+.gradients
+{
+    width: 100vw;
+    height: calc(100vh - 250px);
+    background-image: linear-gradient(#0E222C00, #0E222C04,#0E222C09,#0E222C);
+}
+
+.middle-part
+{
+    box-sizing: border-box;
+    background-color: #0E222C;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 125px;
+    border: none;
+}
+
+.middle-part *
+{
+    color: #FFFFFF;
+}
+
+.mid-img
+{
+    background-image: url("../Assets/HomePage/Image\ 1\ -\ Home\ Page.png");
+    width: 70vw;
+    height: 35vw;
+    background-position: center;
+    background-size: cover;
+}
+
+.mid-img h1
+{
+    text-align: left;
+    width: 25vw;
+    transform: translate(0px, 20px);
+    font-size: 32px;
+    opacity: 0;
+    transition: ease-in-out 3s;
+}
+
+.mid-img h1.reveal
+{
+    opacity: 1;
+    transform: translate(-100px, 20px);
+}
+
+.bottom-part
+{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 125px 0px;
+    height: auto;
+    background-color: #f5f5f5;
+}
+
+.photo-grid
+{
+    display: flex;
+    width: auto;
+    height: auto;
+    gap: 20px;
+}
+
+.wedding
+{
+    flex-direction: row;
+}
+
+.vacation
+{
+    flex-direction: row-reverse;
+}
+
+.left-grid
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bottom-part button
+{
+    width: 25vw;
+    height: 82px;
+    padding: 10px;
+    background-color: #313131;
+    border-radius: 100px;
+    color: #FFFFFF;
+    font-size: 2.5vh;
+}
+
+@media(max-width:800px)
+{
+    .content
+    {
+        padding-top: 70px;
+    }
+    .info-menu
+    {
+        width: calc(100% - 100px);
+    }
+
+    .info-menu h1
+    {
+        font-size: 25px;
+    }
+
+    .info-menu p
+    {
+        font-size: 3vw;
+        font-weight: bolder;
+    }
+
+    .info-menu button
+    {
+        width: 60vw;
+    }
+
+    .mid-img
+    {
+        height: 200px;
+        width: 70vw;
+    }
+
+    .mid-img h1
+    {
+        transform: translate(0px, 0px);
+    }
+
+    .bottom-part h1
+    {
+        font-size: 3vh;
+    }
+
+    .bottom-part img
+    {
+        width: 30vw;
+    }
+
+    .bottom-part button
+    {
+        width: 60vw;
+    }
+}

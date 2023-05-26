@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap');
+
+footer *
+{
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+footer a
+{
+    text-decoration: none;
+}
+
+footer
+{
+    box-sizing: border-box;
+    width: 100vw;
+    min-height: 570px;
+    padding: 60px 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../Assets/Footer-Background.jpg");
+    background-size: cover;
+    gap: 70px;
+}
+
+.footer-logo
+{
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+}
+
+.footer-logo img
+{
+    width: 227px;
+    height: 69.51px;
+}
+
+.information
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.information hr
+{
+    display: none;
+}
+
+.left-footer
+{
+    min-width: 168px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.left-footer h4
+{
+    text-align: left;
+}
+
+.middle-footer
+{
+    min-width: 168px;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.middle-footer h4
+{
+    text-align: center;
+}
+
+.middle-footer h5
+{
+    text-align: center;
+}
+
+.right-footer
+{
+    min-width: 168px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 50px;
+}
+
+.right-footer h4
+{
+    text-align: right;
+}
+
+.navigation
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media(max-width:800px)
+{
+    footer
+    {
+        background-position: center;
+    }
+
+    .information
+    {
+        flex-direction: column;
+        gap: 10vw;
+    }
+
+    .information div
+    {
+        align-items: center;
+    }
+
+    .information *
+    {
+        text-align: center;
+    }
+
+    .information hr
+    {
+        display: block;
+    }
+}
